@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: jaka5
+    relative_path: urdf/jaka5.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/jaka5.srdf
+  CONFIG:
+    author_name: 12344
+    author_email: 1234@qq.com
+    generated_timestamp: 1693450509

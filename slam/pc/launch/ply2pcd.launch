@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="slam_tools" type="ply2pcd" name="ply2pcd" output="screen" />
+</launch>

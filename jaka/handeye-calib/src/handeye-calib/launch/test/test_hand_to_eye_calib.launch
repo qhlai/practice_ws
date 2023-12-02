@@ -1,0 +1,19 @@
+<launch>
+    <!-- The arm marker in camera Pose Topic,Use ros geometry_msgs::Pose-->
+
+    <arg   name="base_link"   default="/base_link" />
+    <arg   name="end_link"   default="/link7_name" />
+
+    <arg   name="base_link2camera_link" default="{'t':[0,0,0],'r':[0,0,0,1]}" />
+    <arg   name="camera_link"   default="/camera_frame" />
+    <arg   name="marker_link"   default="/aruco_marker_frame"/>
+
+    <node pkg="handeye-calib" type="test_hand_to_eye.py" name="test_hand_to_eye" output="screen" >
+         <param name="base_link" value="$(arg base_link)" />
+         <param name="end_link" value="$(arg end_link)" />
+         <param name="base_link2camera_link" value="$(arg base_link2camera_link)" />
+         <param name="camera_link" value="$(arg camera_link)" />
+         <param name="marker_link" value="$(arg marker_link)" />
+    </node>
+
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+  <!-- <param name="robot_ip" value="192.168.10.200" type="str" /> -->
+  <node pkg="control_msgs" type="jaka5_server" name="jaka5_server" output="screen" />
+
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <!-- <param name="robot_ip" value="192.168.10.200" type="str" /> -->
+  <node pkg="jaka_control" type="jaka_show" name="jaka_show" output="screen" />
+</launch>

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/uestc/HL_ws/src/tracker_kcf_ros/devel/setup.sh

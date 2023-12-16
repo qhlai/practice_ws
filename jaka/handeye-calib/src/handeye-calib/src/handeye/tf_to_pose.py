@@ -26,7 +26,7 @@ if __name__ == '__main__':
     listener = tf.TransformListener()
     pub = rospy.Publisher(str(arm_pose_topic),PoseStamped,queue_size=10)
 
-    rate = rospy.Rate(1.0)
+    rate = rospy.Rate(50)
     while not rospy.is_shutdown():
         try:
             (trans1,rot1) = listener.lookupTransform(str(base_link),str(end_link), rospy.Time(0))

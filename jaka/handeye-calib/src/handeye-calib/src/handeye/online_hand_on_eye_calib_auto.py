@@ -117,7 +117,7 @@ def calib_cmd_callback(msg):
         np.save(img_aligned_path + image_name, np_image)
 
         # print(str(real_moveit_pose))
-        real_moveit_pose_sample.append([real_moveit_pose.position.y,real_moveit_pose.position.y,real_moveit_pose.position.z,real_moveit_pose.orientation.w,real_moveit_pose.orientation.x,real_moveit_pose.orientation.y,real_moveit_pose.orientation.z])
+        real_moveit_pose_sample.append([real_moveit_pose.position.x,real_moveit_pose.position.y,real_moveit_pose.position.z,real_moveit_pose.orientation.w,real_moveit_pose.orientation.x,real_moveit_pose.orientation.y,real_moveit_pose.orientation.z])
         print("len: ",len(real_moveit_pose_sample))
 
         # real_moveit_pose
@@ -271,7 +271,7 @@ if __name__ == '__main__':
             np.save(img_aligned_path + image_name, np_image)
 
             # print(str(real_moveit_pose))
-            real_moveit_pose_sample.append([real_moveit_pose.position.y,real_moveit_pose.position.y,real_moveit_pose.position.z,real_moveit_pose.orientation.w,real_moveit_pose.orientation.x,real_moveit_pose.orientation.y,real_moveit_pose.orientation.z])
+            real_moveit_pose_sample.append([real_moveit_pose.position.x,real_moveit_pose.position.y,real_moveit_pose.position.z,real_moveit_pose.orientation.w,real_moveit_pose.orientation.x,real_moveit_pose.orientation.y,real_moveit_pose.orientation.z])
             print("len: ",len(real_moveit_pose_sample))
 
             # real_moveit_pose

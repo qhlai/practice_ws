@@ -102,3 +102,9 @@ add_dependencies(jaka_inter robot_msgs)
 add_executable(jaka_show src/show.cpp)
 target_link_libraries(jaka_show  ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/libs/libjakaAPI.so)
 add_dependencies(jaka_show robot_msgs)
+
+
+
+add_executable(calib_auto src/calib_auto.cpp)
+target_link_libraries(calib_auto  ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/libs/libjakaAPI.so)
+add_dependencies(calib_auto robot_msgs)

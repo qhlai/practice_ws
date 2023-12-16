@@ -307,11 +307,9 @@ geometry_msgs::Pose set_pose(double x, double y, double z, double qw, double qx,
 // 重载，用x y z rx ry rz设定机械臂末端位姿
 geometry_msgs::Pose set_pose(double x, double y, double z, double rx, double ry, double rz){
     geometry_msgs::Pose out_;
-
     out_.position.x=x;
     out_.position.y=y;
-    out_.position.z=z;    
-
+    out_.position.z=z;
 #if 1
     Eigen::Quaterniond quaternion = rpy2qua(rx, ry, rz);  //这里是基于机械臂的动轴
     quaternion.normalized();
@@ -466,7 +464,7 @@ int main(int argc, char **argv)
     double dire_v[dire_num][4]={
         {0, -1, 0, -0.25},
         {1, -1, 0, -0.25},
-        {1, -0.1, 0, -0.25},
+        {1, -1, 0, -0.25},
         // {1, 0, 0, -0.25},
         {1, -1, 0, -0.25},
         {-1, -1, 0, -0.25},
